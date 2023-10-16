@@ -25,7 +25,7 @@ fairseq-train ${DATA_ROOT} \
   --seed 1 \
   --fp16 \
   \
-  --task speecht5 \
+  --task artst \
   --t5-task t2s \
   --sample-rate 16000 \
   --num-workers 4 \
@@ -34,7 +34,7 @@ fairseq-train ${DATA_ROOT} \
   --bpe-tokenizer ${BPE_TOKENIZER} \
   --max-tokens-valid 4000000 \
   \
-  --criterion speecht5 \
+  --criterion artst \
   --use-guided-attn-loss \
   --report-accuracy \
   --sentence-avg \

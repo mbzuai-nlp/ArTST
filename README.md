@@ -42,9 +42,11 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
 
 |  |  |  |
 
+
+
 ## Environment & Installation
 
-Python version == 3.8
+Python version = 3.8
 
 1) Clone this repo
 ```bash
