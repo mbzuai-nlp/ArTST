@@ -1,0 +1,52 @@
+DATASET=MGB2
+MODEL=MGB2
+
+CHECKPOINT_PATH=''
+DATA_ROOT=''
+SUBSET=''
+BPE_TOKENIZER=/l/users/hawau.toyin/ArTST/asr_spm.model
+LABEL_DIR=''
+USER_DIR=/l/users/hawau.toyin/ArTST/artst
+RESULTS_PATH=/l/users/hawau.toyin/ArTST/inference/ASR/$DATASET
+
+mkdir -p ${RESULTS_PATH}
+ 
+BEAM=5
+CTC_WEIGHT=0.25
+MAX_TOKENS=350000
+
+fairseq-generate ${DATA_ROOT} \
+  --gen-subset ${SUBSET} \
+  --bpe-tokenizer ${BPE_TOKENIZER} \
+  --user-dir ${USER_DIR} \
+  --task speecht5 \
+  --t5-task s2t \
+  --path ${CHECKPOINT_PATH} \
+  --hubert-label-dir ${LABEL_DIR} \
+  --ctc-weight ${CTC_WEIGHT} \
+  --max-tokens ${MAX_TOKENS} \
+  --beam ${BEAM} \
+  --scoring wer \
+  --max-len-a 0 \
+  --max-len-b 1000 \
+  --sample-rate 16000 \
+  --batch-size 1 \
+  --num-workers 4 \
+  --results-path ${RESULTS_PATH} 
+  
+
+grep "^D\-" ${RESULTS_PATH}/generate-${SUBSET}.txt | \
+sed 's/^D-//ig' | sort -nk1 | cut -f3 \
+> ${RESULTS_PATH}/${SUBSET}-pred.txt
+
+grep "^T\-" ${RESULTS_PATH}/generate-${SUBSET}.txt | \
+sed 's/^T-//ig' | sort -nk1 | cut -f2 \
+> ${RESULTS_PATH}/${SUBSET}-true.txt
+
+python ./cer.py -t ${RESULTS_PATH}/${SUBSET}-true.txt \
+ -p ${RESULTS_PATH}/${SUBSET}-pred.txt \
+ -d ${DATASET}
+
+python ./cer.py -t ${RESULTS_PATH}/${SUBSET}-true.txt \
+ -p ${RESULTS_PATH}/${SUBSET}-pred.txt \
+ -d ${DATASET} -m wer

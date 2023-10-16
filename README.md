@@ -19,8 +19,6 @@
 <br>
 </div>
 
-# Installation
-
 
 # Checkpoints
 
@@ -41,7 +39,53 @@
 
 |  |  |  |
 
+# Environment & Installation
 
+Python version == 3.8
+
+1) Clone this repo
+```bash
+git clone https://github.com/Theehawau/ArTST.git
+cd ArTST
+conda create -n artst python=3.8
+conda activate artst
+pip install -r requirements.txt
+```
+2) Install fairseq
+```bash
+git clone https://github.com/pytorch/fairseq
+cd fairseq
+pip install --editable ./
+python setup.py build_ext --inplace
+cd ../
+```
+
+# Finetune
+
+## ASR
+
+```bash
+bash ASR/finetune.sh
+```
+
+## TTS
+
+```bash
+bash TTS/finetune.sh
+```
+
+# Inference
+## ASR
+
+```bash
+bash ASR/inference.sh
+```
+
+## TTS
+
+```bash
+bash TTS/inference.sh
+```
 
 # Acknowledgements
 

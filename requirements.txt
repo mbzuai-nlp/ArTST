@@ -1,0 +1,16 @@
+datasets==2.12.0
+editdistance==0.6.2
+espnet
+fairseq
+librosa==0.10.0
+numpy==1.22.0
+omegaconf==2.3.0
+pandas==2.0.1
+PyArabic==0.6.15
+scipy
+soundfile
+torch==2.0.1
+tqdm==4.65.0
+tweepy==4.14.0
+tensorboard
+transformers
