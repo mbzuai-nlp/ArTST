@@ -19,16 +19,19 @@
 <br>
 </div>
 
+## ArTST 
+ArTST, a pre-trained Arabic text and speech transformer for supporting open-source speech technologies for the Arabic language. The model architecture in this first edition follows the unified-modal framework, SpeechT5, that was recently released for English, and is focused on Modern Standard Arabic (MSA), with plans to extend the model for dialectal and code-switched Arabic in future editions. We pre-trained the model from scratch on MSA speech and text data, and fine-tuned it for the following tasks: Automatic Speech Recognition (ASR), Text-To-Speech synthesis (TTS), and spoken dialect identification. 
 
-# Checkpoints
 
-## Pre-Trained Models
+## Checkpoints
+
+### Pre-Trained Models
 
  Model | Pre-train Dataset | Model |
 | --- | --- | --- |
 | ArTST base | MGB2 | [OneDrive](https://mbzuaiac.sharepoint.com/:u:/s/Interns-Summer23/Eap0It3DUTtIhLnanxJe-SEBeHalIkEoCvJUFB_rARqcdQ?e=HbhV87) |
 
-## Finetuned Models
+### Finetuned Models
  Model | FInetune Dataset | Model |
 | --- | --- | --- |
 | ArTST ASR | MGB2 | [OneDrive](https://mbzuaiac.sharepoint.com/:u:/s/Interns-Summer23/EZhZt4Vs8CFFqLnJ3XeGVZcBgl2aJDcfsbE8q8WrH8HxVA?e=roH9Z2) |
@@ -39,7 +42,7 @@
 
 |  |  |  |
 
-# Environment & Installation
+## Environment & Installation
 
 Python version == 3.8
 
@@ -57,34 +60,33 @@ git clone https://github.com/pytorch/fairseq
 cd fairseq
 pip install --editable ./
 python setup.py build_ext --inplace
-cd ../
 ```
 
 # Finetune
 
-## ASR
+### ASR
 
 ```bash
-bash ASR/finetune.sh
+bash /ArTST/ASR/finetune.sh
 ```
 
-## TTS
+### TTS
 
 ```bash
-bash TTS/finetune.sh
+bash /ArTST/TTS/finetune.sh
 ```
 
 # Inference
-## ASR
+### ASR
 
 ```bash
-bash ASR/inference.sh
+bash /ArTST/ASR/inference.sh
 ```
 
-## TTS
+### TTS
 
 ```bash
-bash TTS/inference.sh
+bash /ArTST/TTS/inference.sh
 ```
 
 # Acknowledgements
