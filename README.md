@@ -2,7 +2,7 @@
 
 <h1> ArTST </h1>
 
-<a href=''> <a href=''><img src='https://img.shields.io/badge/paper-ArXiv-red'></a> &nbsp;  <a href=''><img src='https://img.shields.io/badge/demo-Page-green'></a> &nbsp;
+<a href=''> <a href=''><img src='https://img.shields.io/badge/paper-ArXiv-red'></a> &nbsp;  <a href='https://artstts.wixsite.com/artsttts'><img src='https://img.shields.io/badge/demo-Page-green'></a> &nbsp;
 
 <div>
     <a href='' target='_blank'>Hawau Olamide Toyin <sup>*,1,2</sup> </a>&emsp;
@@ -18,3 +18,11 @@
 <i><strong><a target='_blank'>ArabicNLP 2023</a></strong></i>
 <br>
 </div>
+
+# Installation
+
+
+# Checkpoints
+
+
+# Acknowledgements
