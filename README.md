@@ -24,5 +24,12 @@
 
 # Checkpoints
 
+- [Pretrain Model]()
+- [ASR Model]()
+- [TTS Model]() 
+- [ASR SPM model]()
+
 
 # Acknowledgements
+
+ArTST is built on [SpeechT5]() Architecture.
