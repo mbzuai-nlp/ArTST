@@ -1,5 +1,5 @@
 # --------------------------------------------------------
-# ArTST: Unified-Modal Encoder-Decoder Pre-Training for Spoken Language Processing (https://arxiv.org/abs/2110.07205)
+# ArTST: Arabic Text and Speech Transform (https://arxiv.org/abs/2110.07205)
 # Github source: https://github.com/microsoft/ArTST/tree/main/ArTST
 # Copyright (c) 2021 Microsoft
 # Licensed under The MIT License [see LICENSE for details]

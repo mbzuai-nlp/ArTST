@@ -39,11 +39,6 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
 | ArTST* TTS |  [ClArTTS]() | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTSTstar_TTS.pt)  |
 
 
-
-|  |  |  |
-
-
-
 ## Environment & Installation
 
 Python version = 3.8

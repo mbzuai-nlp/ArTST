@@ -1,5 +1,5 @@
 # --------------------------------------------------------
-# SpeechT5: Unified-Modal Encoder-Decoder Pre-Training for Spoken Language Processing (https://arxiv.org/abs/2110.07205)
+# SpeechT5: Arabic Text and Speech Transform (https://arxiv.org/abs/2110.07205)
 # Github source: https://github.com/microsoft/SpeechT5/tree/main/SpeechT5
 # Copyright (c) 2021 Microsoft
 # Licensed under The MIT License [see LICENSE for details]
