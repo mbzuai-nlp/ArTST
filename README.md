@@ -12,7 +12,7 @@
 </div>
 <br>
 <div>
-    <sup>1</sup> MBZUAI &emsp; <sup>2</sup> Speech Lab, MBZUAI &emsp; <sup>*</sup> equal contribution &emsp; 
+    <sup>*</sup> equal contribution &emsp; <sup>1</sup> MBZUAI &emsp; <sup>2</sup> Speech Lab, MBZUAI &emsp; 
 </div>
 <br>
 <i><strong><a target='_blank'>ArabicNLP 2023</a></strong></i>
