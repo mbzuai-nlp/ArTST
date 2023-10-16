@@ -29,14 +29,14 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
 
  Model | Pre-train Dataset | Model |
 | --- | --- | --- |
-| ArTST base | MGB2 | [OneDrive](https://mbzuaiac.sharepoint.com/:u:/s/Interns-Summer23/Eap0It3DUTtIhLnanxJe-SEBeHalIkEoCvJUFB_rARqcdQ?e=HbhV87) |
+| ArTST base | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/pretrain_checkpoint.pt) |
 
 ### Finetuned Models
  Model | FInetune Dataset | Model |
 | --- | --- | --- |
-| ArTST ASR | MGB2 | [OneDrive](https://mbzuaiac.sharepoint.com/:u:/s/Interns-Summer23/EZhZt4Vs8CFFqLnJ3XeGVZcBgl2aJDcfsbE8q8WrH8HxVA?e=roH9Z2) |
-| ArTST TTS | [ClArTTS]() | [Onedrive](https://mbzuaiac.sharepoint.com/:u:/s/Interns-Summer23/EUX97Mhgtm5CizEojxNl2tYB0UFTF4IZ1-OEY1RMdBKZwg?e=PWwc04) |
-| ArTST* TTS |  [ClArTTS]() | [Onedrive](https://mbzuaiac.sharepoint.com/:u:/s/Interns-Summer23/EUi9oUDzfy9Ai1zWe428yT4BXXBWlyAJB0MSEG6IoUo01Q?e=1hwh2g)  |
+| ArTST ASR | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/MGB2_ASR.pt) |
+| ArTST TTS | [ClArTTS]() | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTST_TTS.pt) |
+| ArTST* TTS |  [ClArTTS]() | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTSTstar_TTS.pt)  |
 
 
 
