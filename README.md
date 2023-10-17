@@ -74,7 +74,7 @@ Pretrain:
 
 Please use [fairseq-preprocess](https://fairseq.readthedocs.io/en/latest/command_line_tools.html#fairseq-preprocess) to generate the index and bin files for the text data. We use sentencepiece to pre-process the text, we've provided our SPM models and [dictionary](./main/dict.txt) in this repo. You need to use the SPM model to process the text and then use [fairseq-preprocess](https://fairseq.readthedocs.io/en/latest/command_line_tools.html#fairseq-preprocess) with the provided dictionary to get the index and bin files. Note that after SPM processes sentences, the resulting text should have individual characters separated by space.
 
-For Finetuning, a simple text file containing corresponding texts on each line suffices. See [here](.main/ASR/labels/ASC/).
+For Finetuning, a simple text file containing corresponding texts on each line suffices. See [here](.main/ASR/labels/ASC/) for sample manifest.
 
 ## Training
 
@@ -83,8 +83,8 @@ The bash files contain the parameters and hyperparameters used for pretraining a
 
 ### Pretrain
 
-```bash
-bash train.sh
+``` bash
+bash /ArTST/pretrain/train.sh
 ```
 
 ### Finetune
@@ -107,7 +107,7 @@ bash /ArTST/TTS/finetune.sh
 ```bash
 bash /ArTST/ASR/inference.sh
 ```
-ß
+
 #### TTS
 
 ```bash
