@@ -1,13 +1,13 @@
-DATASET=MGB2
-
-DATA_ROOT=/TTS/hubert_labels/$DATASET
-SAVE_DIR=/TTS/models/$DATASET
+DATASET=/name/of/dataset
+DATA_ROOT=/TTS/_text/$DATASET
+LABEL_DIR=/TTS/_labels/$DATASET
+SAVE_DIR=/TTS/_models/$DATASET
 TRAIN_SET=train
 VALID_SET=valid
-LABEL_DIR=/TTS/labels/$DATASET
-BPE_TOKENIZER=/ArTST/tts_spm.model
-USER_DIR=/artst
-PT_CHECKPOINT_PATH=pretrained_checkpoint_path
+
+BPE_TOKENIZER=/path/to/tokenizer
+USER_DIR=/path/to/artst
+CHECKPOINT_PATH=pretrained_checkpoint_path
 
 mkdir -p ${SAVE_DIR}
 
@@ -71,4 +71,4 @@ fairseq-train ${DATA_ROOT} \
   --relative-position-embedding \
   --freeze-encoder-updates 20000 \
   \
-  --finetune-from-model ${PT_CHECKPOINT_PATH}
+  --finetune-from-model ${CHECKPOINT_PATH}

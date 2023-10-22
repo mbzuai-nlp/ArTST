@@ -1,13 +1,12 @@
-#!/bin/bash
-DATASET=ALL
-MODEL=ALL
-CHECKPOINT_PATH=~/TTS/v1.2/models/$DATASET/checkpoint_last.pt
-DATA_ROOT=~/TTS/v1.2/hubert_labels/
-SUBSET=unseen
-BPE_TOKENIZER=~/TTS/arabic.model
-LABEL_DIR=~/TTS/v1.2/labels
-USER_DIR=~/TTS/artst
-RESULTS_PATH=~/TTS/v1.2/results/new/
+DATASET=/name/of/dataset
+DATA_ROOT=TTS/_manifest/$DATASET
+LABEL_DIR=TTS/_labels/$DATASET
+RESULTS_PATH=/save/folder
+
+SUBSET=dev|test
+BPE_TOKENIZER=/path/to/tokenizer
+USER_DIR=/path/to/artst
+CHECKPOINT_PATH=/path/to/checkpoint
 
 mkdir -p ${RESULTS_PATH}
 

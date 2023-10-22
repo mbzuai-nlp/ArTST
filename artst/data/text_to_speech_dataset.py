@@ -225,19 +225,7 @@ class TextToSpeechDataset(FairseqDataset):
         return [self.get_label(index, i) for i in range(self.num_labels)]
 
     def __getitem__(self, index):
-        if not self.inference:
-            wav, fbank = self.get_audio(index)
-        else: 
-            import soundfile as sf
-            wav_path = '/l/users/speech_lab/_SpeechT5PretrainDataset/Inference/TTS/results/mgbASC/preds/ARA NORM  0001.wav'
-            wav, cur_sample_rate = sf.read(wav_path)
-            wav = torch.from_numpy(wav).float()
-            fbank = logmelfilterbank(
-                wav.view(-1).cpu().numpy(), 16000
-            )
-            fbank = torch.from_numpy(fbank).float()
-            wav = self.postprocess(wav, cur_sample_rate)
-            
+        wav, fbank = self.get_audio(index)            
         labels = self.get_labels(index)
         spkembs = get_features_or_waveform(
             os.path.join(self.audio_root, self.spk_embeds[index])
