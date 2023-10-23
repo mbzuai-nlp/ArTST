@@ -1,13 +1,13 @@
-DATASET=MGB2
-
+DATASET=/name/of/dataset
 DATA_ROOT=ASR/_manifest/$DATASET
-SAVE_DIR=ASR/_models/v2spm$DATASET
+LABEL_DIR=ASR/_labels/$DATASET
+SAVE_DIR=ASR/_models/$DATASET
+
 TRAIN_SET=train
 VALID_SET=valid
-LABEL_DIR=ASR/_labels/$DATASET
-BPE_TOKENIZER=/ArTST/asr_spm.model
-USER_DIR=/l/users/hawau.toyin/ArTST/artst
-PT_CHECKPOINT_PATH=pretrained_checkpoint_path
+BPE_TOKENIZER=/path/to/tokenizer
+USER_DIR=/path/to/artst
+CHECKPOINT_PATH=/path/to/checkpoint
 
 
 mkdir -p ${SAVE_DIR}
@@ -26,7 +26,7 @@ fairseq-train ${DATA_ROOT} \
   --seed 1 \
   --fp16 \
   \
-  --task speecht5 \
+  --task artst \
   --t5-task s2t \
   --sample-rate 16000 \
   --num-workers 0 \
@@ -34,7 +34,7 @@ fairseq-train ${DATA_ROOT} \
   --update-freq 16 \
   --bpe-tokenizer ${BPE_TOKENIZER} \
   \
-  --criterion speecht5 \
+  --criterion artst \
   --report-accuracy \
   --zero-infinity \
   --ce-weight 0.25 \
@@ -66,4 +66,4 @@ fairseq-train ${DATA_ROOT} \
   --feature-grad-mult 1.0 \
   --best-checkpoint-metric s2t_accuracy \
   --maximize-best-checkpoint-metric \
-  --finetune-from-model ${PT_CHECKPOINT_PATH}
+  --finetune-from-model ${CHECKPOINT_PATH}

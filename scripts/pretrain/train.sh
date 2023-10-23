@@ -1,11 +1,9 @@
-DATA_ROOT=/l/users/speech_lab/_SpeechT5PretrainDataset/v1/manifest
-SAVE_DIR=/l/users/speech_lab/_SpeechT5PretrainDataset/v1/models
-LABEL_DIR=/l/users/speech_lab/_SpeechT5PretrainDataset/v1/wav/hubert_labels
+DATA_ROOT=
+SAVE_DIR=
+LABEL_DIR=/path/to/HuBERT/labels
 TRAIN_SET="train|train"
 VALID_SET="test|valid"
-USER_DIR=/l/users/speech_lab/_SpeechT5PretrainDataset/SpeechT5/SpeechT5/speecht5
-
-conda activate fseq
+USER_DIR=/path/to/artst
 
 fairseq-train ${DATA_ROOT} \
   --save-dir ${SAVE_DIR} \
@@ -21,7 +19,7 @@ fairseq-train ${DATA_ROOT} \
   --seed 1337 \
   --fp16 \
   \
-  --task speecht5 \
+  --task artst \
   --t5-task pretrain \
   --label-rates 50 \
   --sample-rate 16000 \
@@ -33,7 +31,7 @@ fairseq-train ${DATA_ROOT} \
   --update-freq 2 \
   --batch-ratio "[1,0.0086]" \
   \
-  --criterion speecht5 \
+  --criterion artst \
   --optimizer adam \
   --reset-optimizer \
   --adam-betas "(0.9, 0.98)" \

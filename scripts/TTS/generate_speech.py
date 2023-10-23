@@ -17,7 +17,6 @@ from omegaconf import DictConfig
 from transformers import SpeechT5HifiGan
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print(device)
 vocoder = SpeechT5HifiGan.from_pretrained('microsoft/speecht5_hifigan').to(device)
 
 # define function to calculate focus rate
@@ -145,15 +144,6 @@ def _main(cfg: DictConfig, output_file):
         audio_name = op.basename(sample['name'][0])
         file_name = cfg.common_eval.results_path + audio_name
         sf.write(file_name, gen_audio, 16000)
-        logging.info(
-            "{} (size: {}->{} ({}), focus rate: {:.3f})".format(
-                sample['name'][0],
-                sample['src_lengths'][0].item(),
-                outs.shape[0],
-                sample['dec_target_lengths'][0].item(), 
-                focus_rate
-            )
-        )
         print("{} (size: {}->{} ({}), focus rate: {:.3f})".format(
                 sample['name'][0],
                 sample['src_lengths'][0].item(),
