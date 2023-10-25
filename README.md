@@ -5,8 +5,8 @@
 <a href=''> <a href=''><img src='https://img.shields.io/badge/paper-ArXiv-red'></a> &nbsp;  <a href='https://artstts.wixsite.com/artsttts'><img src='https://img.shields.io/badge/demo-Page-green'></a> &nbsp;
 
 <div>
-    <a href='' target='_blank'>Hawau Olamide Toyin <sup>*,1</sup> </a>&emsp;
-    <a href='' target='_blank'>Amirbek Djanibekov <sup>*,1</a>&emsp;
+    <a href='' target='_blank'>Hawau Olamide Toyin <sup>* 1</sup> </a>&emsp;
+    <a href='' target='_blank'>Amirbek Djanibekov <sup>* 1</a>&emsp;
     <a href='' target='_blank'>Ajinkya Kulkarni <sup>1</a>&emsp;
     <a href='' target='_blank'>Hanan Aldarmaki <sup>1</a>&emsp;
 </div>
