@@ -378,17 +378,9 @@ class SequenceGenerator(nn.Module):
                 for b in range(tokens.size(0)):
                     hyp_key = " ".join(str(x) for x in tokens[b, : step + 1].tolist())
                     
-                    try:
-                        ctc_scores, ctc_states = ctc_prefix_score(
-                            tokens[b, : step + 1].cpu(), local_best_ids[b].cpu(), ctc_hyps[hyp_key]["ctc_state_prev"]
-                        )
-                    except KeyError as e:
-                        # print(f"ctc_hyps: {ctc_hyps.keys()}")
-                        print(f"hyp_key: {hyp_key}")
-                        print(f"step: {step}")
-                        print(f"b: {b}")
-                        print(e)
-                        raise KeyError
+                    ctc_scores, ctc_states = ctc_prefix_score(
+                        tokens[b, : step + 1].cpu(), local_best_ids[b].cpu(), ctc_hyps[hyp_key]["ctc_state_prev"]
+                    )
                     lprobs[b] = lprobs[b]
                     lprobs[b, local_best_ids[b]] = (1 - self.ctc_weight) * (lprobs[b, local_best_ids[b]]) + self.ctc_weight * torch.from_numpy(
                             ctc_scores - ctc_hyps[hyp_key]["ctc_score_prev"]

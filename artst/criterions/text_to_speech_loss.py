@@ -12,7 +12,7 @@ from fairseq import metrics, utils
 from espnet.nets.pytorch_backend.nets_utils import make_non_pad_mask
 from fairseq.criterions import FairseqCriterion, register_criterion
 from fairseq.dataclass import FairseqDataclass
-from speecht5.models.modules.speech_encoder_prenet import SpeechEncoderPrenet
+from artst.models.modules.speech_encoder_prenet import SpeechEncoderPrenet
 from espnet.nets.pytorch_backend.e2e_tts_tacotron2 import GuidedAttentionLoss
 from omegaconf import II
 from typing import Any

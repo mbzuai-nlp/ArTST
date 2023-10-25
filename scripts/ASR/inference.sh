@@ -1,13 +1,14 @@
-DATASET=MGB2
-MODEL=MGB2
 
-CHECKPOINT_PATH=''
-DATA_ROOT=''
-SUBSET=''
-BPE_TOKENIZER=/l/users/hawau.toyin/ArTST/asr_spm.model
-LABEL_DIR=''
-USER_DIR=/l/users/hawau.toyin/ArTST/artst
-RESULTS_PATH=/l/users/hawau.toyin/ArTST/inference/ASR/$DATASET
+DATASET=/name/of/dataset
+DATA_ROOT=/path/to/dataset
+LABEL_DIR=/path/to/labels
+CHECKPOINT_PATH=/path/to/finetuned/model
+
+SUBSET=dev|test
+BPE_TOKENIZER=/path/to/tokenizer
+
+USER_DIR=/path/to/artst
+RESULTS_PATH=
 
 mkdir -p ${RESULTS_PATH}
  
@@ -19,7 +20,7 @@ fairseq-generate ${DATA_ROOT} \
   --gen-subset ${SUBSET} \
   --bpe-tokenizer ${BPE_TOKENIZER} \
   --user-dir ${USER_DIR} \
-  --task speecht5 \
+  --task artst \
   --t5-task s2t \
   --path ${CHECKPOINT_PATH} \
   --hubert-label-dir ${LABEL_DIR} \

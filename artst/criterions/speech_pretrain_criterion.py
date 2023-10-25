@@ -14,7 +14,7 @@ import torch
 import torch.nn.functional as F
 from fairseq import metrics, utils
 from fairseq.criterions import FairseqCriterion
-from speecht5.criterions.text_to_speech_loss import TexttoSpeechLoss, TexttoSpeechLossConfig
+from artst.criterions.text_to_speech_loss import TexttoSpeechLoss, TexttoSpeechLossConfig
 
 
 @dataclass

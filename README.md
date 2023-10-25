@@ -1,6 +1,9 @@
 <div align="center">
 
 <h1> ArTST </h1>
+This repository contains the implementation of the paper:
+
+**ArTST**: **Ar**abic **T**ext and **S**peech **T**ransformer
 
 <a href=''> <a href=''><img src='https://img.shields.io/badge/paper-ArXiv-red'></a> &nbsp;  <a href='https://artstts.wixsite.com/artsttts'><img src='https://img.shields.io/badge/demo-Page-green'></a> &nbsp;
 
@@ -27,21 +30,21 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
 
 ### Pre-Trained Models
 
- Model | Pre-train Dataset | Model |
-| --- | --- | --- |
-| ArTST base | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/pretrain_checkpoint.pt) |
+ Model | Pre-train Dataset | Model | Tokenizer |
+| --- | --- | --- | --- |
+| ArTST base | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/pretrain_checkpoint.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/asr_spm.model)
 
 ### Finetuned Models
- Model | FInetune Dataset | Model |
-| --- | --- | --- |
-| ArTST ASR | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/MGB2_ASR.pt) |
-| ArTST TTS | [ClArTTS]() | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTST_TTS.pt) |
-| ArTST* TTS |  [ClArTTS]() | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTSTstar_TTS.pt)  |
+ Model | FInetune Dataset | Model | Tokenizer |
+| --- | --- | --- | --- |
+| ArTST ASR | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/MGB2_ASR.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/asr_spm.model)|
+| ArTST TTS | [ClArTTS]() | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTST_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
+| ArTST* TTS |  [ClArTTS]() | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTSTstar_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
 
 
 ## Environment & Installation
 
-Python version = 3.8
+Python version: 3.8+
 
 1) Clone this repo
 ```bash
