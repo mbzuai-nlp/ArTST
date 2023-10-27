@@ -1,5 +1,5 @@
 # --------------------------------------------------------
-# ArTST: Arabic Text and Speech Transformer (https://arxiv.org/abs/2110.07205)
+# ArTST: Arabic Text and Speech Transformer (https://arxiv.org/abs/2310.16621)
 # Github source: https://github.com/mbzuai-nlp/ArTST
 # Based on speecht5, fairseq and espnet code bases
 # https://github.com/microsoft/SpeechT5/tree/main/SpeechT5; https://github.com/pytorch/fairseq; https://github.com/espnet/espnet
