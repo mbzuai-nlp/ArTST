@@ -119,4 +119,4 @@ bash /ArTST/TTS/inference.sh
 
 # Acknowledgements
 
-ArTST is built on [SpeechT5](https://arxiv.org/abs/2110.07205) Architecture.
+ArTST is built on [SpeechT5](https://arxiv.org/abs/2110.07205) Architecture. If you use any of ArTST models, please cite "ArTST: Arabic Text and Speech Transformer". ArabicNLP (2023).
