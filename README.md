@@ -8,10 +8,10 @@ This repository contains the implementation of the paper:
 <a href=''> <a href='https://arxiv.org/abs/2310.16621'><img src='https://img.shields.io/badge/paper-ArXiv-red'></a> &nbsp;  <a href='https://artstts.wixsite.com/artsttts'><img src='https://img.shields.io/badge/demo-Page-green'></a> &nbsp;
 
 <div>
-    <a href='' target='_blank'>Hawau Olamide Toyin <sup>* 1</sup> </a>&emsp;
-    <a href='' target='_blank'>Amirbek Djanibekov <sup>* 1</a>&emsp;
-    <a href='' target='_blank'>Ajinkya Kulkarni <sup>1</a>&emsp;
-    <a href='' target='_blank'>Hanan Aldarmaki <sup>1</a>&emsp;
+    <a href='https://www.linkedin.com/in/toyinhawau/' >Hawau Olamide Toyin <sup>* 1</sup> </a>&emsp;
+    <a href='https://www.linkedin.com/in/amirbek-djanibekov-a7788b201/' target='_blank'>Amirbek Djanibekov <sup>* 1</a>&emsp;
+    <a href='https://www.linkedin.com/in/ajinkya-kulkarni-32b80a130/' target='_blank'>Ajinkya Kulkarni <sup>1</a>&emsp;
+    <a href='https://linkedin.com/in/hanan-aldarmaki/' target='_blank'>Hanan Aldarmaki <sup>1</a>&emsp;
 </div>
 <br>
 <div>
