@@ -39,7 +39,7 @@ logger = logging.getLogger(__name__)
 TASK_NAME = ["s2t", "t2s", "s2s", "s2c", "pretrain"]
 
 @register_task("artst")
-class SpeechT5Task(LegacyFairseqTask):
+class ArTSTTask(LegacyFairseqTask):
     @staticmethod
     def add_args(parser):
         parser.add_argument("data", help="manifest root path")
@@ -605,7 +605,7 @@ class SpeechT5Task(LegacyFairseqTask):
         args.label_rates = self.args.label_rates
         args.sample_rate = self.args.sample_rate
         self.args.reduction_factor = args.reduction_factor
-        return super(SpeechT5Task, self).build_model(args)
+        return super(ArTSTTask, self).build_model(args)
 
     def build_generator(
         self,
