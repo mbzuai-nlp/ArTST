@@ -87,7 +87,7 @@ The bash files contain the parameters and hyperparameters used for pretraining a
 ### Pretrain
 
 ``` bash
-bash /ArTST/pretrain/train.sh
+bash /scripts/pretrain/train.sh
 ```
 
 ### Finetune
