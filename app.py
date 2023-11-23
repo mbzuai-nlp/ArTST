@@ -2,6 +2,7 @@ import os
 import torch
 import gradio as gr
 import os.path as op
+import pyarabic.araby as araby
 
 from artst.tasks.artst import ArTSTTask
 from transformers import SpeechT5HifiGan
@@ -33,6 +34,7 @@ def get_embs(emb_path):
     return spkembs
 
 def process_text(text):
+    text = araby.strip_diacritics(text)
     return processor(tokenizer.encode(text)).reshape(1, -1)
 
 net_input = {}
@@ -47,8 +49,6 @@ def inference(text, spkr=emb_path):
     with torch.no_grad():
         gen_audio = vocoder(outs.to(device))
     return (16000,gen_audio.cpu().numpy())
-
-
 
 text_box = gr.Textbox(max_lines=2, label="Arabic Text")
 out = gr.Audio(label="Synthesized Audio", type="numpy")
