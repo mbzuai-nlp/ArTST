@@ -102,7 +102,7 @@ The bash files contain the parameters and hyperparameters used for pretraining a
 ### Pretrain
 
 ``` bash
-bash /ArTST/pretrain/train.sh
+bash /scripts/pretrain/train.sh
 ```
 
 ### Finetune
@@ -110,26 +110,26 @@ bash /ArTST/pretrain/train.sh
 #### ASR
 
 ```bash
-bash /ArTST/ASR/finetune.sh
+bash /scripts/ASR/finetune.sh
 ```
 
 #### TTS
 
 ```bash
-bash /ArTST/TTS/finetune.sh
+bash /scripts/TTS/finetune.sh
 ```
 
 ## Inference
 #### ASR
 
 ```bash
-bash /ArTST/ASR/inference.sh
+bash /scripts/ASR/inference.sh
 ```
 
 #### TTS
 
 ```bash
-bash /ArTST/TTS/inference.sh
+bash /scripts/TTS/inference.sh
 ```
 
 # Acknowledgements
