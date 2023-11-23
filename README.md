@@ -62,6 +62,21 @@ pip install --editable ./
 python setup.py build_ext --inplace
 ```
 
+## Loading Model
+
+```python
+import torch
+from artst.tasks.artst import ArTSTTask
+from artst.models.artst import ArTSTTransformerModel
+
+checkpoint = torch.load('checkpoint.pt')
+checkpoint['cfg']['task'].t5_task = 't2s'
+task = ArTSTTask.setup_task(checkpoint['cfg']['task'])
+
+model = ArTSTTransformerModel.build_model(checkpoint['cfg']['model'], task)
+model.load_state_dict(checkpoint['model'])
+```
+
 ## Data Preparation
 
 #### Speech
