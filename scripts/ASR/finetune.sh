@@ -55,7 +55,7 @@ fairseq-train ${DATA_ROOT} \
   --save-interval-updates 2000 \
   --skip-invalid-size-inputs-valid-test \
   \
-  --arch t5_transformer_base_asr \
+  --arch artst_transformer_base_asr \
   --share-input-output-embed \
   --find-unused-parameters \
   --bert-init \

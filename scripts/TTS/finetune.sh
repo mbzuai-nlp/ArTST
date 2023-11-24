@@ -64,7 +64,7 @@ fairseq-train ${DATA_ROOT} \
   --validate-interval 2 \
   --log-interval 10 \
   \
-  --arch t5_transformer_base_asr \
+  --arch artst_transformer_base_asr \
   --share-input-output-embed \
   --find-unused-parameters \
   --bert-init \

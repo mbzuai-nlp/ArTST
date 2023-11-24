@@ -49,7 +49,7 @@ fairseq-train ${DATA_ROOT} \
   --skip-invalid-size-inputs-valid-test \
   --required-batch-size-multiple 1 \
   \
-  --arch t5_transformer_base \
+  --arch artst_transformer_base \
   --share-input-output-embed \
   --find-unused-parameters \
   --bert-init \
