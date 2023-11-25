@@ -44,10 +44,3 @@ grep "^T\-" ${RESULTS_PATH}/generate-${SUBSET}.txt | \
 sed 's/^T-//ig' | sort -nk1 | cut -f2 \
 > ${RESULTS_PATH}/${SUBSET}-true.txt
 
-python ./cer.py -t ${RESULTS_PATH}/${SUBSET}-true.txt \
- -p ${RESULTS_PATH}/${SUBSET}-pred.txt \
- -d ${DATASET}
-
-python ./cer.py -t ${RESULTS_PATH}/${SUBSET}-true.txt \
- -p ${RESULTS_PATH}/${SUBSET}-pred.txt \
- -d ${DATASET} -m wer
