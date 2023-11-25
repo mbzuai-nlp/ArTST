@@ -62,6 +62,12 @@ pip install --editable ./
 python setup.py build_ext --inplace
 ```
 
+3) Download Checkpoints
+```bash
+# Make sure you have git-lfs installed (https://git-lfs.com)
+git lfs install
+git clone https://huggingface.co/MBZUAI/ArTST
+```
 ## Loading Model
 
 ```python
@@ -96,7 +102,7 @@ For Finetuning, a simple text file containing corresponding texts on each line s
 
 ## Training
 
-The bash files contain the parameters and hyperparameters used for pretraining and finetuning. Find more details on training arguments [here](https://fairseq.readthedocs.io/en/latest/)
+The bash [files](.main/scripts/) contain the parameters and hyperparameters used for pretraining and finetuning. Find more details on training arguments [here](https://fairseq.readthedocs.io/en/latest/)
 
 
 ### Pretrain
