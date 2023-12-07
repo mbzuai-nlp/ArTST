@@ -5,7 +5,7 @@ This repository contains the implementation of the paper:
 
 **ArTST**: **Ar**abic **T**ext and **S**peech **T**ransformer
 
-<a href=''> <a href='https://arxiv.org/abs/2310.16621'><img src='https://img.shields.io/badge/paper-ArXiv-red'></a> &nbsp;  <a href='https://artstts.wixsite.com/artsttts'><img src='https://img.shields.io/badge/project-Page-green'></a> &nbsp; <a href='https://huggingface.co/spaces/MBZUAI/artst-tts-demo'><img src='https://img.shields.io/badge/demo-Page-yellow'></a> &nbsp;
+<a href=''> <a href='https://arxiv.org/abs/2310.16621'><img src='https://img.shields.io/badge/paper-ArXiv-red'></a> &nbsp;  <a href='https://artstts.wixsite.com/artsttts'><img src='https://img.shields.io/badge/project-Page-green'></a> &nbsp; <a href='https://huggingface.co/spaces/MBZUAI/artst-tts-demo'><img src='https://img.shields.io/badge/demo-Spaces-yellow'></a> &nbsp;
 
 <div>
     <a href='https://www.linkedin.com/in/toyinhawau/' >Hawau Olamide Toyin <sup>* 1</sup> </a>&emsp;
@@ -18,7 +18,7 @@ This repository contains the implementation of the paper:
     <sup>*</sup> equal contribution &emsp; <sup>1</sup> MBZUAI &emsp;
 </div>
 <br>
-<i><strong><a target='_blank'>ArabicNLP 2023</a></strong></i>
+<i><strong><a href='https://aclanthology.org/2023.arabicnlp-1.5/' target='_blank'>ArabicNLP 2023</a></strong></i>
 <br>
 </div>
 
@@ -76,7 +76,7 @@ from artst.tasks.artst import ArTSTTask
 from artst.models.artst import ArTSTTransformerModel
 
 checkpoint = torch.load('checkpoint.pt')
-checkpoint['cfg']['task'].t5_task = 't2s' # or "s2t"
+checkpoint['cfg']['task'].t5_task = 't2s' # or "s2t" for asr
 task = ArTSTTask.setup_task(checkpoint['cfg']['task'])
 
 model = ArTSTTransformerModel.build_model(checkpoint['cfg']['model'], task)
@@ -140,4 +140,35 @@ bash /scripts/TTS/inference.sh
 
 # Acknowledgements
 
-ArTST is built on [SpeechT5](https://arxiv.org/abs/2110.07205) Architecture. If you use any of ArTST models, please cite "ArTST: Arabic Text and Speech Transformer". ArabicNLP (2023).
+ArTST is built on [SpeechT5](https://arxiv.org/abs/2110.07205) Architecture. If you use any of ArTST models, please cite 
+
+``` 
+@inproceedings{toyin-etal-2023-artst,
+    title = "{A}r{TST}: {A}rabic Text and Speech Transformer",
+    author = "Toyin, Hawau  and
+      Djanibekov, Amirbek  and
+      Kulkarni, Ajinkya  and
+      Aldarmaki, Hanan",
+    editor = "Sawaf, Hassan  and
+      El-Beltagy, Samhaa  and
+      Zaghouani, Wajdi  and
+      Magdy, Walid  and
+      Abdelali, Ahmed  and
+      Tomeh, Nadi  and
+      Abu Farha, Ibrahim  and
+      Habash, Nizar  and
+      Khalifa, Salam  and
+      Keleg, Amr  and
+      Haddad, Hatem  and
+      Zitouni, Imed  and
+      Mrini, Khalil  and
+      Almatham, Rawan",
+    booktitle = "Proceedings of ArabicNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.arabicnlp-1.5",
+    pages = "41--51"
+}
+```
