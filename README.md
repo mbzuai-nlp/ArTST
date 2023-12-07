@@ -5,7 +5,7 @@ This repository contains the implementation of the paper:
 
 **ArTST**: **Ar**abic **T**ext and **S**peech **T**ransformer
 
-<a href=''> <a href='https://arxiv.org/abs/2310.16621'><img src='https://img.shields.io/badge/paper-ArXiv-red'></a> &nbsp;  <a href='https://artstts.wixsite.com/artsttts'><img src='https://img.shields.io/badge/project-Page-green'></a> &nbsp; <a href='https://huggingface.co/spaces/MBZUAI/artst-tts-demo'><img src='https://img.shields.io/badge/demo-Spaces-yellow'></a> &nbsp;
+<a href=''> <a href='https://aclanthology.org/2023.arabicnlp-1.5/'><img src='https://img.shields.io/badge/paper-Paper-red'></a> &nbsp;  <a href='https://artstts.wixsite.com/artsttts'><img src='https://img.shields.io/badge/project-Page-green'></a> &nbsp; <a href='https://huggingface.co/spaces/MBZUAI/artst-tts-demo'><img src='https://img.shields.io/badge/demo-Spaces-yellow'></a> &nbsp;
 
 <div>
     <a href='https://www.linkedin.com/in/toyinhawau/' >Hawau Olamide Toyin <sup>* 1</sup> </a>&emsp;
