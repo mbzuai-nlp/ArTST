@@ -142,6 +142,9 @@ def _main(cfg: DictConfig, output_file):
         
         outs = outs.cpu().numpy()
         audio_name = op.basename(sample['name'][0])
+        if cfg.dataset.gen_subset == "zero_shot_test":
+            audio_name = "_".join(sample['name'][0].split('/')[-3:])
+       
         file_name = cfg.common_eval.results_path + audio_name
         sf.write(file_name, gen_audio, 16000)
         print("{} (size: {}->{} ({}), focus rate: {:.3f})".format(
