@@ -38,8 +38,8 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
  Model | FInetune Dataset | Model | Tokenizer |
 | --- | --- | --- | --- |
 | ArTST ASR | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/MGB2_ASR.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/asr_spm.model)|
-| ArTST TTS | [ClArTTS]() | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTST_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
-| ArTST* TTS |  [ClArTTS]() | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTSTstar_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
+| ArTST TTS | ClArTTS | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTST_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
+| ArTST* TTS |  ClArTTS | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTSTstar_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
 
 
 ## Environment & Installation
@@ -90,15 +90,15 @@ model.load_state_dict(checkpoint['model'])
 For pretraining, follow the steps for preparing wav2vec 2.0 manifest [here](https://github.com/pytorch/fairseq/tree/main/examples/wav2vec#prepare-training-data-manifest) and preparing HuBERT label [here](https://github.com/facebookresearch/fairseq/tree/main/examples/hubert/simple_kmeans).
 
 For finetuning TTS task, an extra column is required in the speech manifest file for speaker embedding. To generate speaker embedding, we use [speech brain](https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb). 
-[Here](./main/TTS/hubert_labels/ASC) is a DATA_ROOT sample folder structure that contains manifest samples.
+[Here](./main/scripts/DATA_ROOT) is a DATA_ROOT sample folder structure that contains manifest samples.
 
 #### Text 
 
 Pretrain:
 
-Please use [fairseq-preprocess](https://fairseq.readthedocs.io/en/latest/command_line_tools.html#fairseq-preprocess) to generate the index and bin files for the text data. We use sentencepiece to pre-process the text, we've provided our SPM models and [dictionary](./main/dict.txt) in this repo. You need to use the SPM model to process the text and then use [fairseq-preprocess](https://fairseq.readthedocs.io/en/latest/command_line_tools.html#fairseq-preprocess) with the provided dictionary to get the index and bin files. Note that after SPM processes sentences, the resulting text should have individual characters separated by space.
+Please use [fairseq-preprocess](https://fairseq.readthedocs.io/en/latest/command_line_tools.html#fairseq-preprocess) to generate the index and bin files for the text data. We use sentencepiece to pre-process the text, we've provided our SPM models and [dictionary](./main/scripts/DATA_ROOT/dict.txt) in this repo. You need to use the SPM model to process the text and then use [fairseq-preprocess](https://fairseq.readthedocs.io/en/latest/command_line_tools.html#fairseq-preprocess) with the provided dictionary to get the index and bin files. Note that after SPM processes sentences, the resulting text should have individual characters separated by space.
 
-For Finetuning, a simple text file containing corresponding texts on each line suffices. See [here](.main/ASR/labels/ASC/) for sample manifest.
+For Finetuning, a simple text file containing corresponding texts on each line suffices. See [here](.main/scripts/DATA_ROOT/test.txt) for sample manifest.
 
 ## Training
 
