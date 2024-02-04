@@ -13,7 +13,7 @@ python3 generate_speech.py ${DATA_ROOT} \
   --gen-subset ${SUBSET} \
   --bpe-tokenizer ${BPE_TOKENIZER} \
   --user-dir ${USER_DIR} \
-  --task speecht5 \
+  --task artst \
   --t5-task t2s \
   --path ${CHECKPOINT_PATH} \
   --hubert-label-dir ${LABEL_DIR} \
