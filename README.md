@@ -156,20 +156,6 @@ ArTST is built on [SpeechT5](https://arxiv.org/abs/2110.07205) Architecture. If 
       Djanibekov, Amirbek  and
       Kulkarni, Ajinkya  and
       Aldarmaki, Hanan",
-    editor = "Sawaf, Hassan  and
-      El-Beltagy, Samhaa  and
-      Zaghouani, Wajdi  and
-      Magdy, Walid  and
-      Abdelali, Ahmed  and
-      Tomeh, Nadi  and
-      Abu Farha, Ibrahim  and
-      Habash, Nizar  and
-      Khalifa, Salam  and
-      Keleg, Amr  and
-      Haddad, Hatem  and
-      Zitouni, Imed  and
-      Mrini, Khalil  and
-      Almatham, Rawan",
     booktitle = "Proceedings of ArabicNLP 2023",
     month = dec,
     year = "2023",
