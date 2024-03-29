@@ -150,18 +150,11 @@ bash /scripts/TTS/inference.sh
 ArTST is built on [SpeechT5](https://arxiv.org/abs/2110.07205) Architecture. If you use any of ArTST models, please cite 
 
 ``` 
-@inproceedings{toyin-etal-2023-artst,
-    title = "{A}r{TST}: {A}rabic Text and Speech Transformer",
-    author = "Toyin, Hawau  and
-      Djanibekov, Amirbek  and
-      Kulkarni, Ajinkya  and
-      Aldarmaki, Hanan",
-    booktitle = "Proceedings of ArabicNLP 2023",
-    month = dec,
-    year = "2023",
-    address = "Singapore (Hybrid)",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2023.arabicnlp-1.5",
-    pages = "41--51"
+@inproceedings{toyin2023artst,
+  title={ArTST: Arabic Text and Speech Transformer},
+  author={Toyin, Hawau and Djanibekov, Amirbek and Kulkarni, Ajinkya and Aldarmaki, Hanan},
+  booktitle={Proceedings of ArabicNLP 2023},
+  pages={41--51},
+  year={2023}
 }
 ```
