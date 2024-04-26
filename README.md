@@ -26,7 +26,6 @@ This repository contains the implementation of the paper:
 ArTST, a pre-trained Arabic text and speech transformer for supporting open-source speech technologies for the Arabic language. The model architecture in this first edition follows the unified-modal framework, SpeechT5, that was recently released for English, and is focused on Modern Standard Arabic (MSA), with plans to extend the model for dialectal and code-switched Arabic in future editions. We pre-trained the model from scratch on MSA speech and text data, and fine-tuned it for the following tasks: Automatic Speech Recognition (ASR), Text-To-Speech synthesis (TTS), and spoken dialect identification. 
 
 ## Update
- * April, 2024: 
  * February, 2024: Bug fix with checkpoint loading
  * December, 2023: Released ArTST ASR demo [HF-Spaces](https://huggingface.co/spaces/MBZUAI/artst-demo-asr)
  * November, 2023: Released ArTST TTS demo [HF-Spaces](https://huggingface.co/spaces/MBZUAI/artst-tts-demo)
