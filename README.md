@@ -26,6 +26,7 @@ This repository contains the implementation of the paper:
 ArTST, a pre-trained Arabic text and speech transformer for supporting open-source speech technologies for the Arabic language. The model architecture in this first edition follows the unified-modal framework, SpeechT5, that was recently released for English, and is focused on Modern Standard Arabic (MSA), with plans to extend the model for dialectal and code-switched Arabic in future editions. We pre-trained the model from scratch on MSA speech and text data, and fine-tuned it for the following tasks: Automatic Speech Recognition (ASR), Text-To-Speech synthesis (TTS), and spoken dialect identification. 
 
 ## Update
+ * April, 2024: 
  * February, 2024: Bug fix with checkpoint loading
  * December, 2023: Released ArTST ASR demo [HF-Spaces](https://huggingface.co/spaces/MBZUAI/artst-demo-asr)
  * November, 2023: Released ArTST TTS demo [HF-Spaces](https://huggingface.co/spaces/MBZUAI/artst-tts-demo)
@@ -105,7 +106,7 @@ Pretrain:
 
 Please use [fairseq-preprocess](https://fairseq.readthedocs.io/en/latest/command_line_tools.html#fairseq-preprocess) to generate the index and bin files for the text data. We use sentencepiece to pre-process the text, we've provided our SPM models and [dictionary](./scripts/DATA_ROOT/dict.txt) in this repo. You need to use the SPM model to process the text and then use [fairseq-preprocess](https://fairseq.readthedocs.io/en/latest/command_line_tools.html#fairseq-preprocess) with the provided dictionary to get the index and bin files. Note that after SPM processes sentences, the resulting text should have individual characters separated by space.
 
-For Finetuning, a simple text file containing corresponding texts on each line suffices. See [here](./scripts/DATA_ROOT/test.txt) for sample manifest.
+For Finetuning, a simple text file containing corresponding texts on each line suffices. See [here](./scripts/DATA_ROOT/test.txt) for sample manifest. Normalize the texts as we did for training/evaluation using this [script](./scripts/ASR/normalize_text.py).
 
 ## Training
 
