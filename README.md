@@ -84,6 +84,7 @@ from artst.models.artst import ArTSTTransformerModel
 
 checkpoint = torch.load('checkpoint.pt')
 checkpoint['cfg']['task'].t5_task = 't2s' # or "s2t" for asr
+checkpoint['cfg']['task'].data = 'path-to-folder-with-checkpoints'
 task = ArTSTTask.setup_task(checkpoint['cfg']['task'])
 
 model = ArTSTTransformerModel.build_model(checkpoint['cfg']['model'], task)
