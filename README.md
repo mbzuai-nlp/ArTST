@@ -26,6 +26,9 @@ This repository contains the implementation of the paper:
 ArTST, a pre-trained Arabic text and speech transformer for supporting open-source speech technologies for the Arabic language. The model architecture in this first edition follows the unified-modal framework, SpeechT5, that was recently released for English, and is focused on Modern Standard Arabic (MSA), with plans to extend the model for dialectal and code-switched Arabic in future editions. We pre-trained the model from scratch on MSA speech and text data, and fine-tuned it for the following tasks: Automatic Speech Recognition (ASR), Text-To-Speech synthesis (TTS), and spoken dialect identification. 
 
 ## Update
+ * October, 2024: Huggingface ArTST v2 ASR model card [hugging face transformers](https://huggingface.co/MBZUAI/artst-v2-asr)
+ * October, 2024: Released ArTSTv2 that covers 17 dialects in pre-training (checkpoints coming soon)
+ * October, 2024: Huggingface ArTST v1 ASR model card [hugging face transformers](https://huggingface.co/MBZUAI/artst_asr)
  * February, 2024: Released ArTST TTS on [hugging face transformers](https://huggingface.co/MBZUAI/speecht5_tts_clartts_ar)
  * February, 2024: Bug fix with checkpoint loading
  * December, 2023: Released ArTST ASR demo [HF-Spaces](https://huggingface.co/spaces/MBZUAI/artst-demo-asr)
@@ -41,15 +44,18 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
 
  Model | Pre-train Dataset | Model | Tokenizer |
 | --- | --- | --- | --- |
-| ArTST base | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/pretrain_checkpoint.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/asr_spm.model)
+| ArTST v1 base | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/pretrain_checkpoint.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/asr_spm.model)
+| ArTST v2 base | Dialects | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/pretrain_checkpoint.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/tokenizer_artstv2.model)
+| ArTST v3 base | Multilingual | soon | soon
 
 ### Finetuned Models
  Model | FInetune Dataset | Model | Tokenizer |
 | --- | --- | --- | --- |
-| ArTST ASR | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/MGB2_ASR.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/asr_spm.model)|
-| ArTST TTS | ClArTTS | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTST_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
+| ArTST v1 ASR | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/MGB2_ASR.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/asr_spm.model)|
+| ArTST v1 TTS | ClArTTS | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTST_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
 | ArTST* TTS |  ClArTTS | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTSTstar_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
-
+| ArTST v2 ASR | QASR | [Hugging Face - safetenors](https://huggingface.co/MBZUAI/artst-v2-asr/blob/main/model.safetensors) | [Hugging Face](https://huggingface.co/MBZUAI/artst-v2-asr/blob/main/spm_char.model) |
+| ArTST v2 ASR | Dialects | soon | soon |
 
 ## Environment & Installation
 
