@@ -27,7 +27,7 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
 
 ## Update
  * October, 2024: Huggingface ArTST v2 ASR model card [hugging face transformers](https://huggingface.co/MBZUAI/artst-v2-asr)
- * October, 2024: Released ArTSTv2 that covers 17 dialects in pre-training (checkpoints coming soon)
+ * October, 2024: Released ArTSTv2 base that covers 17 dialects in pre-training
  * October, 2024: Huggingface ArTST v1 ASR model card [hugging face transformers](https://huggingface.co/MBZUAI/artst_asr)
  * February, 2024: Released ArTST TTS on [hugging face transformers](https://huggingface.co/MBZUAI/speecht5_tts_clartts_ar)
  * February, 2024: Bug fix with checkpoint loading
