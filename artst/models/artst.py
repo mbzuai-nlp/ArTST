@@ -89,7 +89,7 @@ class ArTSTTransformerModel(FairseqEncoderDecoderModel):
                     args.decoder_embed_dim + self.spk_embed_dim, args.decoder_embed_dim
                 )
 
-        # Hawau: here we can add language embedding integration
+        # here we can add language embedding integration
 
         self.use_codebook = args.use_codebook
         self.codebook_prob = getattr(args, "codebook_prob", 0.5) # args.codebook_prob

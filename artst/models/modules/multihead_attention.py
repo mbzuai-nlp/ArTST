@@ -174,7 +174,6 @@ class MultiheadAttention(nn.Module):
             and not self.has_relative_attention_bias
         ):
             assert key is not None and value is not None
-            # Hawau:
             if  query.dtype != attn_mask.dtype:
                 attn_mask = attn_mask.type(query.dtype)
             # My code ends here

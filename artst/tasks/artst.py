@@ -334,7 +334,7 @@ class ArTSTTask(LegacyFairseqTask):
             manifest = f"{self.args.data}/{split}.tsv"
             procs = [LabelEncoder(self.dicts["text"])]
             paths = [f"{self.args.hubert_label_dir}/{split}.txt"]
-            # Hawau: view dataset...
+            # view dataset...
             logger.info(f"Manifest: {manifest}")
             # logger.info(f"Paths: {paths}")
             self.datasets[split] = SpeechToTextDataset(

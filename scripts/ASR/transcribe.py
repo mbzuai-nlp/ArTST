@@ -271,7 +271,7 @@ if __name__ == "__main__":
         help="Model architecture. For constructing tasks that rely on "
         "model args (e.g. `AudioPretraining`)",
     )
-    parser.add_argument('--data', type=str, default='/l/users/hawau.toyin/demoApp/artst/utils', metavar='data')
+    parser.add_argument('--data', type=str, default='/artst/utils', metavar='data')
     parser.add_argument('--bpe-tokenizer', type=str, default='/l/users/speech_lab/_SpeechT5PretrainDataset/FinetuneV2/v2.model')
     parser.add_argument('--user-dir', type=str, default='/l/users/speech_lab/_SpeechT5PretrainDataset/SpeechT5_inference/SpeechT5/speecht5')
     parser.add_argument('--task', type=str, default='artst')
@@ -288,8 +288,8 @@ if __name__ == "__main__":
     # parser.add_argument('--num-workers', type=int, default=4)
     parser.add_argument('--seed', type=int, default=4)
     parser.add_argument('--normalize', type=bool, default=True)
-    parser.add_argument("-i",'--input_file', type=str, default='/l/users/hawau.toyin/ArabicDeepFake/voxtube_cleaned.tsv')
-    parser.add_argument("-o",'--out_file', type=str, default='/l/users/hawau.toyin/ArabicDeepFake/voxtube_artst_transcript_test.tsv')
+    parser.add_argument("-i",'--input_file', type=str, default='/input.tsv')
+    parser.add_argument("-o",'--out_file', type=str, default='/output.tsv')
 
     args = parser.parse_args()
     

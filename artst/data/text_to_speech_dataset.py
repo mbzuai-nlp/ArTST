@@ -206,7 +206,7 @@ class TextToSpeechDataset(FairseqDataset):
             #     f.seek(offset_s)
             #     label = f.read(offset_e - offset_s)
             
-            # Hawau:
+            
             # mmap method
             with open(self.label_paths[label_idx], encoding='utf-8') as f:
                 with mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as mm:

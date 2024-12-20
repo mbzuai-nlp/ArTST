@@ -1,11 +1,11 @@
 /
-/l/users/hawau.toyin/ArabicDeepFake/DATASETS/wav_files/ch_14_arabic_tts_dataset_98.wav	88066	/l/users/hawau.toyin/ArTST/scripts/DATA_ROOT/CLARTTS_speaker_embedding.npy
-/l/users/hawau.toyin/ArabicDeepFake/DATASETS/wav_files/ch_05_arabic_tts_dataset_93.wav	64706	/l/users/hawau.toyin/ArTST/scripts/DATA_ROOT/CLARTTS_speaker_embedding.npy
-/l/users/hawau.toyin/ArabicDeepFake/DATASETS/wav_files/ch_12_arabic_tts_dataset_63.wav	57131	/l/users/hawau.toyin/ArTST/scripts/DATA_ROOT/CLARTTS_speaker_embedding.npy
-/l/users/hawau.toyin/ArabicDeepFake/DATASETS/wav_files/ch_16_arabic_tts_dataset_494.wav	61771	/l/users/hawau.toyin/ArTST/scripts/DATA_ROOT/CLARTTS_speaker_embedding.npy
-/l/users/hawau.toyin/ArabicDeepFake/DATASETS/wav_files/ch_10_arabic_tts_dataset_589.wav	56068	/l/users/hawau.toyin/ArTST/scripts/DATA_ROOT/CLARTTS_speaker_embedding.npy
-/l/users/hawau.toyin/ArabicDeepFake/DATASETS/wav_files/ch_11_arabic_tts_dataset_315.wav	51074	/l/users/hawau.toyin/ArTST/scripts/DATA_ROOT/CLARTTS_speaker_embedding.npy
-/l/users/hawau.toyin/ArabicDeepFake/DATASETS/wav_files/ch_16_arabic_tts_dataset_513.wav	54149	/l/users/hawau.toyin/ArTST/scripts/DATA_ROOT/CLARTTS_speaker_embedding.npy
-/l/users/hawau.toyin/ArabicDeepFake/DATASETS/wav_files/ch_04_arabic_tts_dataset_24.wav	59938	/l/users/hawau.toyin/ArTST/scripts/DATA_ROOT/CLARTTS_speaker_embedding.npy
-/l/users/hawau.toyin/ArabicDeepFake/DATASETS/wav_files/ch_14_arabic_tts_dataset_272.wav	65313	/l/users/hawau.toyin/ArTST/scripts/DATA_ROOT/CLARTTS_speaker_embedding.npy
-/l/users/hawau.toyin/ArabicDeepFake/DATASETS/wav_files/ch_12_arabic_tts_dataset_183.wav	93875	/l/users/hawau.toyin/ArTST/scripts/DATA_ROOT/CLARTTS_speaker_embedding.npy
+DATASETS/wav_files/ch_14_arabic_tts_dataset_98.wav	88066	DATA_ROOT/CLARTTS_speaker_embedding.npy
+DATASETS/wav_files/ch_05_arabic_tts_dataset_93.wav	64706	DATA_ROOT/CLARTTS_speaker_embedding.npy
+DATASETS/wav_files/ch_12_arabic_tts_dataset_63.wav	57131	DATA_ROOT/CLARTTS_speaker_embedding.npy
+DATASETS/wav_files/ch_16_arabic_tts_dataset_494.wav	61771	DATA_ROOT/CLARTTS_speaker_embedding.npy
+DATASETS/wav_files/ch_10_arabic_tts_dataset_589.wav	56068	DATA_ROOT/CLARTTS_speaker_embedding.npy
+DATASETS/wav_files/ch_11_arabic_tts_dataset_315.wav	51074	DATA_ROOT/CLARTTS_speaker_embedding.npy
+DATASETS/wav_files/ch_16_arabic_tts_dataset_513.wav	54149	DATA_ROOT/CLARTTS_speaker_embedding.npy
+DATASETS/wav_files/ch_04_arabic_tts_dataset_24.wav	59938	DATA_ROOT/CLARTTS_speaker_embedding.npy
+DATASETS/wav_files/ch_14_arabic_tts_dataset_272.wav	65313	DATA_ROOT/CLARTTS_speaker_embedding.npy
+DATASETS/wav_files/ch_12_arabic_tts_dataset_183.wav	93875	DATA_ROOT/CLARTTS_speaker_embedding.npy

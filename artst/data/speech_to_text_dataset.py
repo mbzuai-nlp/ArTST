@@ -62,7 +62,7 @@ def load_label(label_path, inds, tot):
 
 def load_label_offset(label_path, inds, tot):
     with open(label_path) as f:
-        # Hawau:
+        
         # changed line length reading as it's incorrect
         code_lengths = [len(line.encode("utf-8")) for line in f] #original
         # code_lengths = [len(line) for line in f] #fix
@@ -120,7 +120,7 @@ class SpeechToTextDataset(FairseqDataset):
 
     def get_audio(self, index):
         import soundfile as sf
-        # Hawau:
+        
         # logger.info(f"loaded_audio: {self.audio_names[index]}")
         wav_path = os.path.join(self.audio_root, self.audio_names[index])
         wav, cur_sample_rate = sf.read(wav_path)
@@ -135,11 +135,11 @@ class SpeechToTextDataset(FairseqDataset):
             # list slicing method
             # with open(self.label_paths[label_idx]) as f:
             #     offset_s, offset_e = self.label_offsets_list[label_idx][index]
-            #     # Hawau:
+            #     
             #     # f.seek(offset_s)
             #     # label = f.read(offset_e - offset_s)
             #     label = f.read()[offset_s : offset_e]
-            # Hawau:
+            
             # mmap method
             with open(self.label_paths[label_idx], encoding='utf-8') as f:
                 with mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as mm:
@@ -147,7 +147,7 @@ class SpeechToTextDataset(FairseqDataset):
                     label = mm[offset_s:offset_e].decode("utf-8")
 
                 
-        # Hawau:
+        
         # logger.info(f"loaded_label: {label}")
         if self.tokenizer is not None:
             label = self.tokenizer.encode(label)
@@ -186,7 +186,7 @@ class SpeechToTextDataset(FairseqDataset):
         ]
         targets_list, lengths_list, ntokens_list = self.collater_label(targets_by_label)
 
-        # Hawau:
+        
         # logger.info(f'targets_list: {targets_list}')
     
 
@@ -257,7 +257,7 @@ class SpeechToTextDataset(FairseqDataset):
         itr = zip(targets_by_label, [self.tgt_dict.pad()])
         
         for targets, pad in itr:
-            # Hawau:
+            
             # logger.info(f'targets: {targets}')
             targets, lengths, ntokens = self.collater_seq_label(targets, pad)
             targets_list.append(targets)
