@@ -26,6 +26,7 @@ This repository contains the implementation of the paper:
 ArTST, a pre-trained Arabic text and speech transformer for supporting open-source speech technologies for the Arabic language. The model architecture in this first edition follows the unified-modal framework, SpeechT5, that was recently released for English, and is focused on Modern Standard Arabic (MSA), with plans to extend the model for dialectal and code-switched Arabic in future editions. We pre-trained the model from scratch on MSA speech and text data, and fine-tuned it for the following tasks: Automatic Speech Recognition (ASR), Text-To-Speech synthesis (TTS), and spoken dialect identification. 
 
 ## Update
+ * December, 2024: Fine-tuning notebook using hugging face trainer on [colab](https://drive.google.com/file/d/1Tp-6BgjmbVh-sh_Oro1xlWhYJm5_8Sfl/view?usp=sharing)
  * October, 2024: Huggingface ArTST v2 ASR model card [hugging face transformers](https://huggingface.co/MBZUAI/artst-v2-asr)
  * October, 2024: Released ArTSTv2 base that covers 17 dialects in pre-training
  * October, 2024: Huggingface ArTST v1 ASR model card [hugging face transformers](https://huggingface.co/MBZUAI/artst_asr)
@@ -83,7 +84,24 @@ git lfs install
 git clone https://huggingface.co/MBZUAI/ArTST
 ```
 ## Loading Model
+### With HuggingFace Transformers
+```python
+from transformers import (
+    SpeechT5ForSpeechToText,
+    SpeechT5Processor,
+    SpeechT5Tokenizer,
+)
 
+device = "cuda" if torch.cuda.is_available() else "CPU"
+
+model_id = "mbzuai/artst-v2-asr" # or "mbzuai/artst_asr" for v1
+
+tokenizer = SpeechT5Tokenizer.from_pretrained(model_id)
+processor = SpeechT5Processor.from_pretrained(model_id , tokenizer=tokenizer)
+model = SpeechT5ForSpeechToText.from_pretrained(model_id).to(device)
+```
+
+### With Fairseq
 ```python
 import torch
 from artst.tasks.artst import ArTSTTask
