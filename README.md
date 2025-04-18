@@ -55,7 +55,7 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
 | ArTST v1 ASR | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/MGB2_ASR.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/asr_spm.model)|
 | ArTST v1 TTS | ClArTTS | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTST_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
 | ArTST* TTS |  ClArTTS | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTSTstar_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
-| ArTST v2 ASR | QASR | [Hugging Face - safetenors](https://huggingface.co/MBZUAI/artst-v2-asr/blob/main/model.safetensors) | [Hugging Face](https://huggingface.co/MBZUAI/artst-v2-asr/blob/main/spm_char.model) |
+| ArTST v2 ASR | QASR | [Hugging Face - safetenors](https://huggingface.co/MBZUAI/artst_asr_v2/blob/main/model.safetensors) | [Hugging Face](https://huggingface.co/MBZUAI/artst-v2-asr/blob/main/spm_char.model) |
 | ArTST v2 ASR | Dialects | soon | soon |
 
 ## Environment & Installation
