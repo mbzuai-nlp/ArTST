@@ -9,13 +9,15 @@ This repository contains the implementation of the paper:
 
 <div>
     <a href='https://www.linkedin.com/in/toyinhawau/' >Hawau Olamide Toyin <sup>* 1</sup> </a>&emsp;
-    <a href='https://www.linkedin.com/in/amirbek-djanibekov-a7788b201/' target='_blank'>Amirbek Djanibekov <sup>* 1</a>&emsp;
+    <a href='https://www.linkedin.com/in/amir-djanibekov/' target='_blank'>Amirbek Djanibekov <sup>* 1</a>&emsp;
     <a href='https://www.linkedin.com/in/ajinkya-kulkarni-32b80a130/' target='_blank'>Ajinkya Kulkarni <sup>1</a>&emsp;
+    <a href='https://www.linkedin.com/in/raghadalshalan/' target='_blank'>Raghad Alshalan <sup>2</a>&emsp;
+    <a href='' target='_blank'>Abdullah Alitr <sup>2</a>&emsp;
     <a href='https://linkedin.com/in/hanan-aldarmaki/' target='_blank'>Hanan Aldarmaki <sup>1</a>&emsp;
 </div>
 <br>
 <div>
-    <sup>*</sup> equal contribution &emsp; <sup>1</sup> MBZUAI &emsp;
+    <sup>*</sup> equal contribution &emsp; <sup>1</sup> MBZUAI &emsp; <sup>2</sup> STC &emsp;
 </div>
 <br>
 <i><strong><a href='https://aclanthology.org/2023.arabicnlp-1.5/' target='_blank'>ArabicNLP 2023</a></strong></i>
