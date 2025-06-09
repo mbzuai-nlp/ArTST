@@ -25,17 +25,50 @@ This repository contains the implementation of the paper:
 ## ArTST 
 ArTST, a pre-trained Arabic text and speech transformer for supporting open-source speech technologies for the Arabic language. The model architecture in this first edition follows the unified-modal framework, SpeechT5, that was recently released for English, and is focused on Modern Standard Arabic (MSA), with plans to extend the model for dialectal and code-switched Arabic in future editions. We pre-trained the model from scratch on MSA speech and text data, and fine-tuned it for the following tasks: Automatic Speech Recognition (ASR), Text-To-Speech synthesis (TTS), and spoken dialect identification. 
 
-## Update
- * December, 2024: Fine-tuning notebook using hugging face trainer on [colab](https://drive.google.com/file/d/1Tp-6BgjmbVh-sh_Oro1xlWhYJm5_8Sfl/view?usp=sharing)
- * October, 2024: Huggingface ArTST v2 ASR model card [hugging face transformers](https://huggingface.co/MBZUAI/artst-v2-asr)
- * October, 2024: Released ArTSTv2 base that covers 17 dialects in pre-training
- * October, 2024: Huggingface ArTST v1 ASR model card [hugging face transformers](https://huggingface.co/MBZUAI/artst_asr)
- * February, 2024: Released ArTST TTS on [hugging face transformers](https://huggingface.co/MBZUAI/speecht5_tts_clartts_ar)
- * February, 2024: Bug fix with checkpoint loading
- * December, 2023: Released ArTST ASR demo [HF-Spaces](https://huggingface.co/spaces/MBZUAI/artst-demo-asr)
- * November, 2023: Released ArTST TTS demo [HF-Spaces](https://huggingface.co/spaces/MBZUAI/artst-tts-demo)
- * October, 2023: Open-sourced model's weight to HuggingFace
- * October, 2023: ArTST was accepted by EMNLP (ArabicNLP conference) 2023.
+
+### Latest Highlights from the ArTST
+
+* **May 2024** — *ArTSTv2 and ArTSTv3 make it to ACL (main conference)*.
+  Our paper, *"Dialectal Coverage and Generalization in Arabic Speech Recognition"*, was officially accepted at ACL 2025. A significant milestone for dialectal Arabic ASR research.
+
+* **April 2025** — *A milestone in dialectal ASR: 17 fine-tuned checkpoints released*.
+  We’ve expanded ArTSTv2’s reach by publishing 17 fine-tuned models across Arabic dialects. Explore them all on [HuggingFace](https://huggingface.co/MBZUAI/ArTSTv2/tree/main/dialectal_checkpoints).
+
+* **April 2025** — *ArTSTv3 goes live on HuggingFace*.
+  ArTSTv3 ASR model cards are now available: [MGB2 version](https://huggingface.co/MBZUAI/artst_asr_v3) and [QASR version](https://huggingface.co/MBZUAI/artst_asr_v3_qasr).
+
+* **March 2025** — *ArTSTv3: Multilingual pre-training for Arabic + English, French, Spanish*.
+  A major upgrade for ArTST. ArTSTV3 now spans Arabic dialects and adds multilingual support. Available on [HuggingFace](https://huggingface.co/MBZUAI/ArTSTv3).
+
+* **December 2024** — *Fine-tuning made easy*.
+  Released a practical notebook for fine-tuning with Hugging Face Trainer—run it on [Google Colab](https://drive.google.com/file/d/1Tp-6BgjmbVh-sh_Oro1xlWhYJm5_8Sfl/view?usp=sharing).
+
+* **October 2024** — *ArTSTv2 released with HuggingFace integration*.
+  ArTSTv2 is now live along with model cards: [ASR v2 (MGB2)](https://huggingface.co/MBZUAI/artst_asr_v2) and [ASR v2 (QASR)](https://huggingface.co/MBZUAI/artst_asr_v2_qasr)
+
+* **October 2024** — *ArTSTv2: Dialectal pre-training for Arabic*.
+  Pre-trained ArTST from scratch on 17 Arabic dialects
+
+* **October 2024** — *ArTSTv1 joins the HuggingFace*.
+  The first version of our ASR model has been made available here: [ASR v1](https://huggingface.co/MBZUAI/artst_asr)
+
+* **February 2024** - *Bug fix*. Addressed key checkpoint-loading issues
+
+* **February 2024** — *TTS support launched*.
+  We’ve released ArTST TTS for Arabic via HuggingFace's Transformers: [TTS model](https://huggingface.co/MBZUAI/speecht5_tts_clartts_ar).
+
+* **December 2023** — *Speech-to-Text (ASR) demo now on HuggingFace Spaces*.
+  Try the ArTST ASR model in real-time: [Demo here](https://huggingface.co/spaces/MBZUAI/artst-demo-asr)
+
+* **November 2023** — *Text-to-Speech (TTS) demo released*.
+  Experience our TTS model in action: [Demo here](https://huggingface.co/spaces/MBZUAI/artst-tts-demo)
+
+* **October 2023** — *ArTST goes open-source*.
+  Model weights are now publicly accessible on [HuggingFace](https://huggingface.co/MBZUAI/ArTST).
+
+* **October 2023** — *ArTST recognized at EMNLP 2023*.
+  Our work was accepted at the ArabicNLP workshop at EMNLP 2023.
+
 
 
 
@@ -47,7 +80,7 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
 | --- | --- | --- | --- |
 | ArTST v1 base | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/pretrain_checkpoint.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/asr_spm.model)
 | ArTST v2 base | Dialects | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/pretrain_checkpoint.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/tokenizer_artstv2.model)
-| ArTST v3 base | Multilingual | soon | soon
+| ArTST v3 base | Multilingual | [HuggingFace](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/pretrain_checkpoint.pt) | [HuggingFace](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/tokenizer_artstv3.model) 
 
 ### Finetuned Models
  Model | FInetune Dataset | Model | Tokenizer |
@@ -56,7 +89,12 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
 | ArTST v1 TTS | ClArTTS | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTST_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
 | ArTST* TTS |  ClArTTS | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/CLARTTS_ArTSTstar_TTS.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/tts_spm.model)|
 | ArTST v2 ASR | QASR | [Hugging Face - safetenors](https://huggingface.co/MBZUAI/artst_asr_v2/blob/main/model.safetensors) | [Hugging Face](https://huggingface.co/MBZUAI/artst-v2-asr/blob/main/spm_char.model) |
-| ArTST v2 ASR | Dialects | soon | soon |
+| ArTST v2 ASR | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/ASR_MGB2_best.pt_hf.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/tokenizer_artstv2.model) |
+| ArTST v2 ASR | QASR | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/ASR_QASR_best.pt_hf.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/tokenizer_artstv2.model) |
+| ArTST v2 ASR | Dialects | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/ASR_Dialects_MGB2_best.pt_hf.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/tokenizer_artstv2.model) |
+| ArTST v3 ASR | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/%5Bfairseq%5Dmgb2_checkpoint_best.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/tokenizer_artstv3.model) |
+| ArTST v3 ASR | QASR | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/%5Bfairseq%5Dqasr_checkpoint_best.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/tokenizer_artstv3.model) |
+| ArTST v3 ASR | Mutlilingual | soon | soon |
 
 ## Environment & Installation
 
@@ -85,6 +123,7 @@ git clone https://huggingface.co/MBZUAI/ArTST
 ```
 ## Loading Model
 ### With HuggingFace Transformers
+Transformers version: 4.46.3
 ```python
 from transformers import (
     SpeechT5ForSpeechToText,
@@ -182,5 +221,15 @@ ArTST is built on [SpeechT5](https://arxiv.org/abs/2110.07205) Architecture. If 
   booktitle={Proceedings of ArabicNLP 2023},
   pages={41--51},
   year={2023}
+}
+
+@misc{djanibekov2025dialectalcoveragegeneralizationarabic,
+      title={Dialectal Coverage And Generalization in Arabic Speech Recognition}, 
+      author={Amirbek Djanibekov and Hawau Olamide Toyin and Raghad Alshalan and Abdullah Alitr and Hanan Aldarmaki},
+      year={2025},
+      eprint={2411.05872},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2411.05872}, 
 }
 ```
