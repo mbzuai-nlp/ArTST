@@ -5,7 +5,7 @@ This repository contains the implementation of the paper:
 
 **ArTST**: **Ar**abic **T**ext and **S**peech **T**ransformer
 
-<a href=''> <a href='https://aclanthology.org/2023.arabicnlp-1.5/'><img src='https://img.shields.io/badge/paper-Paper-red'></a> &nbsp;  <a href='https://artstts.wixsite.com/artsttts'><img src='https://img.shields.io/badge/project-Page-green'></a> &nbsp; <a href='https://huggingface.co/spaces/MBZUAI/artst-tts-demo'><img src='https://img.shields.io/badge/demo-Spaces-yellow'></a> &nbsp;
+<a href=''> <a href='https://aclanthology.org/2023.arabicnlp-1.5/'><img src='https://img.shields.io/badge/paper-Paper(v1)-red'></a> &nbsp; <a href='https://arxiv.org/abs/2411.05872'><img src='https://img.shields.io/badge/paper-Paper(v2 & v3)-red'></a> &nbsp;  <a href='https://artstts.wixsite.com/artsttts'><img src='https://img.shields.io/badge/project-Page-green'></a> &nbsp; <a href='https://huggingface.co/spaces/MBZUAI/artst-tts-demo'><img src='https://img.shields.io/badge/demo-Spaces-yellow'></a> &nbsp;
 
 <div>
     <a href='https://www.linkedin.com/in/toyinhawau/' >Hawau Olamide Toyin <sup>* 1</sup> </a>&emsp;
@@ -20,7 +20,8 @@ This repository contains the implementation of the paper:
     <sup>*</sup> equal contribution &emsp; <sup>1</sup> MBZUAI &emsp; <sup>2</sup> STC &emsp;
 </div>
 <br>
-<i><strong><a href='https://aclanthology.org/2023.arabicnlp-1.5/' target='_blank'>ArabicNLP 2023</a></strong></i>
+<i><strong><a href='https://aclanthology.org/2023.arabicnlp-1.5/' target='_blank'>ArabicNLP 2023</a></strong></i>, &nbsp;
+<i><strong><a href='' target='_blank'>ACL 2025</a></strong></i>
 <br>
 </div>
 
