@@ -30,6 +30,8 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
 
 
 ### Latest Highlights from the ArTST
+* **June 2024** — *ArTSTv1.5: MSA pre-training with diacritics for Arabic*.
+  Pre-trained ArTST from scratch on MGB2 and Tashkeela dataset.
 
 * **May 2024** — *ArTSTv2 and ArTSTv3 make it to ACL (main conference)*.
   Our paper, *"Dialectal Coverage and Generalization in Arabic Speech Recognition"*, was officially accepted at ACL 2025. A significant milestone for dialectal Arabic ASR research.
@@ -82,6 +84,7 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
  Model | Pre-train Dataset | Model | Tokenizer |
 | --- | --- | --- | --- |
 | ArTST v1 base | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/pretrain_checkpoint.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTST/blob/main/asr_spm.model)
+| ArTST v1.5 base | MGB2 + Tashkeela| [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv1.5/blob/main/%5Bfairseq%5Dcheckpoint_best.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv1.5/blob/main/sp_model.model)
 | ArTST v2 base | Dialects | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/pretrain_checkpoint.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/tokenizer_artstv2.model)
 | ArTST v3 base | Multilingual | [HuggingFace](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/pretrain_checkpoint.pt) | [HuggingFace](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/tokenizer_artstv3.model) 
 
