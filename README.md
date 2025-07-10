@@ -100,7 +100,7 @@ ArTST, a pre-trained Arabic text and speech transformer for supporting open-sour
 | ArTST v2 ASR | Dialects | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/ASR_Dialects_MGB2_best.pt_hf.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv2/blob/main/tokenizer_artstv2.model) |
 | ArTST v3 ASR | MGB2 | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/%5Bfairseq%5Dmgb2_checkpoint_best.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/tokenizer_artstv3.model) |
 | ArTST v3 ASR | QASR | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/%5Bfairseq%5Dqasr_checkpoint_best.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/tokenizer_artstv3.model) |
-| ArTST v3 ASR | Mutlilingual | soon | soon |
+| ArTST v3 ASR | Mutlilingual | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv3/resolve/main/%5Bfairseq%5Djoint_multilingual.pt) | [Hugging Face](https://huggingface.co/MBZUAI/ArTSTv3/blob/main/tokenizer_artstv3.model) |
 
 ## Environment & Installation
 
